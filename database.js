@@ -7,4 +7,8 @@ const connection = mysql.createConnection({
     database : 'local_skills'
 });
 
+connection.connect((err) => {
+    console.log(err || 'connected to mysqul'); 
+}); 
+
 module.exports = connection; 

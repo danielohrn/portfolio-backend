@@ -40,4 +40,7 @@ function selectAllFrom(table, dbConnection) {
 }
 
 
-module.exports = {composeSkillsAndAddons, selectAllFrom};
+module.exports = {
+    composeSkillsAndAddons, 
+    selectAllFrom
+};
