@@ -1,17 +1,14 @@
-const router = require('express').Router(); 
-const skillController = require('./controllers/SkillController'); 
+const router = require("express").Router();
+const skillController = require("./controllers/SkillController");
 
+/*
+ * GET all skills from DB
+ */
+router.get("/skills", skillController.getAllSkillsAndAddons);
 
-/* 
-* GET all skills from DB
-*/
-router.get('/skills', skillController.getAllSkillsAndAddons);
+/*
+ * POST a new skill to DB
+ */
+router.post("/skill", skillController.newSkill);
 
-/* 
-* POST a new skill to DB 
-*/
-router.post('/skill', skillController.newSkill); 
-
-
-
-module.exports = router; 
+module.exports = router;
